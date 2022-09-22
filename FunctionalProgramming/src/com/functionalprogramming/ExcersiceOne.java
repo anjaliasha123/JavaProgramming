@@ -32,6 +32,7 @@ public class ExcersiceOne {
 				elem -> System.out.println(elem)
 				);
 	}
+	
 
 
 }
