@@ -5,9 +5,11 @@ import java.util.List;
 public class FunctionalProgrammingRunner {
 
 	public static void main(String[] args) {
-		List<String> list = List.of("Apple","Banana","Mangoe");
+		List<String> list = List.of("Apple","Banana"
+				,"Mangoe","Cat","Mat","Suzan");
 		
-		printList(list);
+//		printList(list);
+		printListWithFiltering(list);
 
 	}
 
@@ -23,6 +25,16 @@ public class FunctionalProgrammingRunner {
 	private static void printListFP(List<String> list) {
 		list.stream().forEach(
 				element -> System.out.println(element)
+				);
+	}
+	
+	private static void printListWithFiltering(List<String> list) {
+		list.stream()
+		.filter(
+				elem -> elem.endsWith("at")
+				)
+		.forEach(
+				elem -> System.out.println(elem)
 				);
 	}
 
