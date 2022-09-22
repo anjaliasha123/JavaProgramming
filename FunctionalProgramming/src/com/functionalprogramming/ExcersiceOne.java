@@ -6,7 +6,8 @@ public class ExcersiceOne {
 
 	public static void main(String[] args) {
 		List<Integer> list = List.of(1,11,34,54,12,6);
-		printNumFP(list);
+//		printNumFP(list);
+		printSumReduced(list);
 		
 	}
 	private static void printNumFP(List<Integer> list) {
@@ -14,6 +15,14 @@ public class ExcersiceOne {
 				num -> System.out.println(num)
 				);
 	}
+	private static void printSumReduced(List<Integer> list) {
+		int s = list.stream()
+		.reduce( 
+				0,
+				(num1, num2) -> num1 + num2
+				);
+		System.out.println(s);
+		}
 
 
 }
