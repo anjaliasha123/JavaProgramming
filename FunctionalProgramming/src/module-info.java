@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author bajio
+ *
+ */
+module FunctionalProgramming {
+}
